@@ -13,7 +13,7 @@ class SaxonTest {
 //    @Test
 //    public void should_inherit_from_Soldier() {
 //        Saxon saxon = new Saxon(health, strength);
-//        assertNotNull(saxon instanceof Soldier);
+//        assertNot Null(saxon instanceof Soldier);
 //    }
 
 //    @Test
@@ -29,7 +29,7 @@ class SaxonTest {
 //    }
 
 //    @Test
-//    public void should_receive_the_health_property_as_its_2st_argument() {
+//    public void should_receive_the_health_property_as_its_2nd_argument() {
 //        Saxon saxon = new Saxon(health, strength);
 //        assertEquals(25, saxon.strength);
 //    }
