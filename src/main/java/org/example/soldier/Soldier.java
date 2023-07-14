@@ -1,7 +1,7 @@
 package org.example.soldier;
 
 public class Soldier {
-    int health;
+    protected int health;
     int strength;
     public Soldier(int health, int strength){
         this.health = health;
@@ -12,10 +12,24 @@ public class Soldier {
     }
 
     public void receiveDamage(int damage) {
-        health -= damage;
+
+        this.health -= damage;
+    }
+    public int getHealth() {
+        return health;
     }
 
-    public int attack(int damage) {
-        return damage;
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getDamage() {
+
+        return health;
+    }
+
+    public void setHealth(int health) {
+
+        this.health = health;
     }
 }

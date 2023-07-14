@@ -9,8 +9,8 @@ class VikingTest {
     String name = "Harald";
     int strength = 150;
     int health = 300;
-
-    Viking viking = new Viking(name, health, strength);
+}
+    Vikings viking = new Vikings(name, health, strength);
 
     @Test
     public void should_inherit_from_Soldier() {
@@ -38,7 +38,7 @@ class VikingTest {
     }
 
     @Test
-    public void attack_should_return_strength_property_of_the_Saxon() {
+    public void attack_should_return_strength_property_of_the_Viking() {
         int resultAttack = viking.attack();
         assertEquals(strength, resultAttack);
     }

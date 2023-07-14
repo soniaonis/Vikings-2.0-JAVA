@@ -1,10 +1,10 @@
 package org.example.vikins;
 import org.example.soldier.Soldier;
 
-public class Viking extends Soldier {
-    private String name;
+public class Vikings extends Soldier {
+    public String name;
 
-    public Viking(String name, int health, int strength) {
+    public Vikings (String name, int health, int strength) {
         super(health, strength);
         this.name = name;
     }
@@ -26,5 +26,9 @@ public class Viking extends Soldier {
 
     public void receiveDamage(int damage) {
         setHealth(getHealth() - damage);
+    }
+
+    public String battleCry() {
+        return "Odin Owns You All!";
     }
 }
